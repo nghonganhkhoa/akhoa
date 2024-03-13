@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Đóng Góp Ý Kiến</title>
+<style>
+    .container {
+        max-width: 800px;
+        margin: 50px auto;        
+        padding: 20px;
+    }
+    .main_frm{
+        background-color: #f2f3f5; 
+        margin: 50px auto;        
+        padding: 20px;       
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-control {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        
+    }
+    .form-control label {
+        display: block;
+        font-weight: bold;
+    }
+    .form-control input[type="text"],
+    .form-control input[type="email"],
+    .form-control select {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+    .form-control textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        resize: vertical;
+    }
+    .form-control button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        border: none;
+        color: #fff;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .form-control button:hover {
+        background-color: #0056b3;
+    }
+    .form-group {
+        display: flex;
+        justify-content: space-between;              
+    }
+    .form-group > div {
+        width: 48%;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2 style="text-align: center; color:#9805eb;">ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</h2>
+    <p style="text-align: center; font-size: 13px;">Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng việt có dấu</p>
+    <p style="text-align: center; font-size: 13px;">Các ý kiến đóng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm &#40;nếu có&#41;.</p>
+    <div class="main_frm">
+        <div class="form-group">
+            <div>
+                <div class="form-control">            
+                    <input type="text" id="fullname" name="fullname" required placeholder="Họ và Tên">
+                </div>
+                <div class="form-control">                
+                    <input type="text" id="phone" name="phone" required placeholder="Số điện thoại">
+                </div>
+                <div class="form-control">                
+                    <select id="customertype" name="customertype" required placeholder="Chọn loại khách hàng">
+                        <option value="vip">VIP</option>
+                        <option value="normal">Bình thường</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div class="form-control">                
+                    <input type="text" id="cardcode" name="cardcode" required placeholder="Mã thẻ">
+                </div>        
+                <div class="form-control">                
+                    <input type="email" id="email" name="email" required placeholder="E-mail">
+                </div>        
+                <div class="form-control">                
+                    <input type="text" id="invoice" name="invoice" required placeholder="Mã hóa đơn">
+                </div>
+            </div>
+        </div>
+        <div class="form-control">        
+            <textarea id="description" name="description" rows="5" required placeholder="Nhập chi tiết mô tả"></textarea>
+        </div>
+        <div class="form-control">
+            <button type="submit" id="submitBtn">GỬI GÓP Ý</button>
+            <script src="../js/frmGY.js">
+            var button = document.getElementById('submitBtn');
+            button.onclick = function(){
+            alert(feedbackInfo);
+            }
+</script>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

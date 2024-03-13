@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbc4d0;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  
+  .container {
+    width: 400px;
+    margin: 40px auto;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #6b29d6;
+  }
+  
+  #bmi,
+  #bmiCategory {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  #bmiCategory {
+    margin-bottom: 10px;
+  }
+  </style>
+</head>
+<body>
+    <h1> TÍNH CHỈ SỐ BMI </h1>
+    <div class="container">
+        <label for="weight"> Nhập cân nặng? </label>
+        <input type="number" id="weight" name="weight">
+        <br>
+        <label for="height"> Nhập chiều cao? </label>
+        <input type="number" id="height" name="height">
+        <br>
+        <label for="height">chọn loại tuổi? </label>
+        <!-- <input type="number" id="heitnght" name="height"> -->
+        <select id="old" name="old">
+            <option value="tn">Trung niên</option>
+            <option value="tn_g">Trung niên , già lớn tuổi </option>
+            <option value="g">Già, lớn tuổi</option>
+          </select>
+        <br>
+        <button onclick="calculateBMI()"> Tính BMI</button>
+        <p id="bmi"></p>
+        <p id="bmiCategory">
+        </p> 
+        
+    </div>
+    <script src="../Bai4/bt4.js"></script>
+</body>
+</html>

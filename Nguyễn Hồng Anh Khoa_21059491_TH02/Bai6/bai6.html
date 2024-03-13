@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0575/0987/1774/files/1_6df15c2e-7475-4b2e-839e-3826bc5c02f6.png?v=1653967370);
+    }
+    
+    h1 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+    }
+    
+    .container {
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+    .login-form {
+        background-color:rgb(255, 197, 228);
+        padding: 20px;
+        border-radius: 5px;
+
+    }
+    
+    .form-group {
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #7bbbf7;
+        color: #fff;
+        border: 3px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #092cc8;
+    }
+    
+    .forgot-password {
+        text-align: right;
+    }
+    
+    .forgot-password a {
+        color: #522fed;
+    }
+    
+    .sign-up {
+        text-align: center;
+    }
+    
+    .sign-up a {
+        color: #2f49ef;
+    }</style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h1>Log In</h1>
+            <form action="#">
+                <div class="form-group">
+                    <label for="username">UserName:</label>
+                    <input type="text" id="username" name="username" placeholder="UserName">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="Password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Log In</button>
+                </div>
+                <div class="form-group forgot-password">
+                    <a href="#">Forgot Password</a>
+                </div>
+                <div class="form-group sign-up">
+                    <p>Bạn chưa có tài khoản? <a href="#">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../Bai6/bai6.js"></script>
+</body>
+</html>

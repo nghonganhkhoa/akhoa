@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+<style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #79beff;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.thong-tin {
+    width: 30%;
+    margin-right: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.lien-he {
+    width: 70%;
+}
+
+form {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #79beff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>LIÊN HỆ</h1>
+    </header>
+    <main>
+        <section class="thong-tin">
+            <h2>Thông tin</h2>
+            <p>Hãy liên lạc với chúng tôi bất cứ khi nào!!!</p>
+            <ul>
+                <li>Kp. 6, P. Linh Trung, Tp. Thủ Đức, Tp. HCM</li>
+                <li>info@uit.edu.vn</li>
+                <li>+84 28 372 52002</li>
+            </ul>
+        </section>
+        <section class="lien-he">
+            <form action="#">
+                <label for="ho-ten">Họ và tên:</label>
+                <input type="text" id="ho-ten" name="ho-ten" placeholder="Nhập họ và tên">
+                <label for="email">Địa chỉ e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email">
+                <label for="tieu-de">Tiêu đề bài viết:</label>
+                <input type="text" id="tieu-de" name="tieu-de" placeholder="Nhập tiêu đề bài viết">
+                <label for="noi-dung">Nội dung cần gửi:</label>
+                <textarea id="noi-dung" name="noi-dung" placeholder="Nhập nội dung cần gửi"></textarea>
+                <button type="submit">GỬI TIN NHẮN</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
